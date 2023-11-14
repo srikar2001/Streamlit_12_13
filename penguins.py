@@ -3,18 +3,15 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 st.title("Palmer's Penguins")
-st.markdown("Use this Streamlit app to make your own scatterplot about
-penguins!")
+st.markdown("Use this Streamlit app to make your own scatterplot about penguins!")
 
 selected_x_var = st.selectbox(
     "What do you want the x variable to be?",
-    ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_
-mass_g"], )
+    ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"], )
 
 selected_y_var = st.selectbox(
     "What about the y?",
-    ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_
-mass_g"],
+    ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g"],
 )
 
 penguins_df = pd.read_csv("penguins.csv")
